@@ -1,0 +1,252 @@
+/*------DOCUMENT------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+section {
+    height: 100vh;
+    width: auto;
+    margin: 0 10%;
+    padding: 5% 0;
+}
+
+p {
+   font-size: 2.3rem; 
+   margin-bottom: 4rem;
+    line-height: 4rem;
+    letter-spacing: .1rem;
+}
+
+.down-button {
+   font-size: 3rem; 
+}
+
+
+.main-title,
+.sub-title {
+    display: block;
+}
+/*------HEADINGS------*/
+
+h2 {
+    font-size: 5rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+
+h3 {
+    font-size: 3rem;
+    margin-bottom: .5rem;
+}
+
+h4 {
+    font-size: 2.2rem;
+    margin-bottom: .4rem;
+}
+
+/*------HERO------*/
+
+.hero {
+    display: grid;
+    grid-template: 10% 1fr 20% / 15% 1fr 15%;
+    justify-items: center;
+    align-items: center;
+}
+
+.hero h1 {
+    grid-area: 2 / 2 / 3 / 3;
+    text-align: center;
+    line-height: 8rem;
+}
+
+.hero h1 .main-title {
+    font-size: 7rem;
+    font-weight: 300;
+    letter-spacing: .5rem;
+}
+
+.hero h1 .subtitle {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.hero .down-button {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+
+/*------SITE-DESCRIPTION------*/
+
+.site-description {
+    display: grid;
+    grid-template: 10% 1fr 20% / 15% 1fr 15%;
+    justify-items: center;
+    align-items: center;
+}
+
+.site-description .content {
+    grid-area: 2 / 2 / 3 / 3;
+    text-align: center;
+}
+
+.site-description .down-button {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+/*------DEFINITION------*/
+
+.definition {
+    display: grid;
+    grid-template: 10% 1fr 20% / 15% 1fr 15%;
+    justify-items: center;
+    align-items: center;
+}
+
+.definition .content {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.definition li {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.definition .down-button {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+/*------STEPS------*/
+
+.steps {
+    display: grid;
+    grid-template: 1fr 2fr 2fr 2fr 2fr 1fr / 1fr 1fr 1fr;
+    align-items: start;
+    justify-items: end;
+    column-gap: 8rem;
+    row-gap: 10rem;
+}
+
+
+.steps h2 {
+    grid-area: 1 / 2 / 3 / 4;
+    text-align: center;
+}
+
+.steps .main-title {
+    font-size: 8rem;
+    letter-spacing: 1rem;
+}
+
+.steps .subtitle {
+    font-size: 3rem;
+    letter-spacing: .5rem;
+}
+
+.steps .step-one {
+    grid-area: 2 / 1 / 4 / 2;
+}
+
+.steps .step-two {
+    grid-area: 3 / 2 / 5 / 3;
+}  
+
+.steps .step-three {
+    grid-area: 4 / 3 / 6 / 4;
+}
+
+.steps .down-button {
+    grid-area: 6 / 1 / 7 / 2;
+    text-align: center;
+    justify-self: center;
+}
+
+/*------STEP-SETUP------*/
+
+.step {
+    display: grid;
+    grid-template: 100vh 100vh 100vh / 20% 70% 20%;
+    border: black 1px solid;
+    align-items: center;
+    justify-items: center;
+    column-gap: 8rem;
+}
+
+.step .sidebar {
+    grid-area: 1 / 1 / 2 / 2;
+    position: sticky;
+    top: 5rem;
+    align-self: start;
+}
+.step .sidebar .main-title {
+    line-height: 3rem;
+}
+.step .sidebar .subtitle{
+    font-size: 3rem;
+}
+
+/*------STEP-ONE------*/
+
+.step-one-1 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.step-one-2 {
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template: 8rem 2fr 2fr 2fr / 2fr 4fr 1fr;
+    align-items: center;
+    justify-items: center;
+    grid-row-gap: 3rem;
+}
+
+.step-one-2 p{
+    font-size: 1.8rem;
+    line-height: 3rem;
+    margin-bottom: 0;
+}
+
+.step-one-2 h3 {
+    grid-area: 1 / 1 / 2 / 4;
+    justify-self: start;
+}
+
+.step-one-2 .clean-photo {
+    grid-area: 2 / 1 / 3 / 2;
+    border: 2px black solid;
+    height: 15rem;
+    width: 15rem;
+}
+.step-one-2 .clean {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.step-one-2 .finance-photo {
+    grid-area: 3 / 1 / 4 / 2;
+    border: 2px black solid;
+    height: 15rem;
+    width: 15rem;
+}
+.step-one-2 .finance {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.step-one-2 .distraction-photo {
+    grid-area: 4 / 1 / 5 / 2;
+    border: 2px black solid;
+    height: 15rem;
+    width: 15rem;
+}
+.step-one-2 .distraction {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.step-one-3 {
+    grid-area: 3 / 2 / 4 / 3;
+}
