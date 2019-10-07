@@ -172,7 +172,6 @@ h4 {
 .step {
     display: grid;
     grid-template: 100vh 100vh 100vh / 20% 70% 20%;
-    border: black 1px solid;
     align-items: center;
     justify-items: center;
     column-gap: 8rem;
@@ -249,4 +248,29 @@ h4 {
 
 .step-one-3 {
     grid-area: 3 / 2 / 4 / 3;
+}
+
+
+/*------STEP-TWO------*/
+
+.step-two h3 {
+    margin-bottom: 2rem;
+}
+
+.step-two-1 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.step-two-2 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.step-two-3 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.step-two-2 li,
+.step-two-3 li {
+    font-size: 2rem;
+    line-height: 5rem;
 }
