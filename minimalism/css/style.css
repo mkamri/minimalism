@@ -18,14 +18,14 @@ section {
 }
 
 p {
-   font-size: 2.3rem; 
-   margin-bottom: 4rem;
+    font-size: 2.3rem; 
+    margin-bottom: 4rem;
     line-height: 4rem;
     letter-spacing: .1rem;
 }
 
 .down-button {
-   font-size: 3rem; 
+   font-size: 2.8rem; 
 }
 
 
@@ -122,9 +122,9 @@ h4 {
     grid-area: 3 / 2 / 4 / 3;
 }
 
-/*------STEPS------*/
+/*------THREE-STEPS------*/
 
-.steps {
+.three-steps {
     display: grid;
     grid-template: 1fr 2fr 2fr 2fr 2fr 1fr / 1fr 1fr 1fr;
     align-items: start;
@@ -134,34 +134,34 @@ h4 {
 }
 
 
-.steps h2 {
+.three-steps h2 {
     grid-area: 1 / 2 / 3 / 4;
     text-align: center;
 }
 
-.steps .main-title {
+.three-steps .main-title {
     font-size: 8rem;
     letter-spacing: 1rem;
 }
 
-.steps .subtitle {
+.three-steps .subtitle {
     font-size: 3rem;
     letter-spacing: .5rem;
 }
 
-.steps .step-one {
+.three-steps .step-one {
     grid-area: 2 / 1 / 4 / 2;
 }
 
-.steps .step-two {
+.three-steps .step-two {
     grid-area: 3 / 2 / 5 / 3;
 }  
 
-.steps .step-three {
+.three-steps .step-three {
     grid-area: 4 / 3 / 6 / 4;
 }
 
-.steps .down-button {
+.three-steps .down-button {
     grid-area: 6 / 1 / 7 / 2;
     text-align: center;
     justify-self: center;
@@ -170,7 +170,6 @@ h4 {
 /*------STEP-SETUP------*/
 
 .step {
-    border: 1px black solid;
     display: grid;
     grid-template: 100vh 100vh 100vh / 20% 70% 20%;
     align-items: center;
