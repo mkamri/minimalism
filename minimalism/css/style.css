@@ -28,6 +28,11 @@ p {
    font-size: 2.8rem; 
 }
 
+.down-button:link,
+.down-button:visited {
+    color: #000;
+}
+
 
 .main-title,
 .sub-title {
