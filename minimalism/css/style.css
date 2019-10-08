@@ -170,6 +170,7 @@ h4 {
 /*------STEP-SETUP------*/
 
 .step {
+    border: 1px black solid;
     display: grid;
     grid-template: 100vh 100vh 100vh / 20% 70% 20%;
     align-items: center;
@@ -180,14 +181,22 @@ h4 {
 .step .sidebar {
     grid-area: 1 / 1 / 2 / 2;
     position: sticky;
-    top: 5rem;
+    top: 0;
+    padding: 5rem 0;
     align-self: start;
+    display: flex;
+    flex-direction: column;
 }
 .step .sidebar .main-title {
     line-height: 3rem;
 }
-.step .sidebar .subtitle{
+.step .sidebar .subtitle {
     font-size: 3rem;
+}
+
+.step .sidebar .down-button {
+    align-self: center;
+    padding-top: 55rem;
 }
 
 /*------STEP-ONE------*/
@@ -283,6 +292,10 @@ h4 {
 
 .step-three-1 {
     grid-area: 1 / 2 / 2 / 3;
+}
+
+.step-three-1 p {
+    font-size: 2rem;
 }
 
 .step-three-2 {
