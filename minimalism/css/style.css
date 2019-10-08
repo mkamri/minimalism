@@ -274,3 +274,37 @@ h4 {
     font-size: 2rem;
     line-height: 5rem;
 }
+
+/*------STEP-THREE------*/
+
+.step-three {
+    grid-template: 100vh 100vh / 20% 70% 20%;
+}
+
+.step-three-1 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.step-three-2 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.step-three-3 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+/*------FINAL-WORDS----*/
+
+.final-words {
+    display: grid;
+    grid-template: 10% 1fr 20% / 15% 1fr 15%;
+    justify-items: center;
+    align-items: center;
+}
+
+.final-words p {
+    grid-area: 2 / 2 / 3 / 3;
+    text-align: center;
+    line-height: 8rem;
+    font-size: 3rem;
+}
