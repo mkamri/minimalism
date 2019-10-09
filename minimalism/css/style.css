@@ -10,11 +10,17 @@ html {
     font-size: 10px;
 }
 
+body {
+    scroll-snap-type: y proximity;
+    overflow-y: scroll;
+}
+
 section {
     height: 100vh;
     width: auto;
     margin: 0 10%;
     padding: 5% 0;
+    scroll-snap-align: start;
 }
 
 p {
@@ -38,6 +44,24 @@ p {
 .sub-title {
     display: block;
 }
+
+/*------ANIMATIONS------*/
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
 /*------HEADINGS------*/
 
 h2 {
@@ -69,6 +93,7 @@ h4 {
     grid-area: 2 / 2 / 3 / 3;
     text-align: center;
     line-height: 8rem;
+    animation: fadeIn 2s ease-in;
 }
 
 .hero h1 .main-title {
@@ -84,6 +109,7 @@ h4 {
 
 .hero .down-button {
     grid-area: 3 / 2 / 4 / 3;
+    animation: fadeIn 2s ease-in;
 }
 
 
