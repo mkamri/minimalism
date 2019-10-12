@@ -6,21 +6,19 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 10px;
-}
 
 body {
     scroll-snap-type: y proximity;
     overflow-y: scroll;
 }
 
+
 section {
-    height: 100vh;
-    width: auto;
-    margin: 0 10%;
-    padding: 5% 0;
-    scroll-snap-align: start;
+height: 100vh;
+width: auto;
+margin: 0 10%;
+padding: 5% 0;
+scroll-snap-align: start;
 }
 
 p {
@@ -178,6 +176,11 @@ h4 {
 .three-steps .subtitle {
     font-size: 3rem;
     letter-spacing: .5rem;
+}
+
+.three-steps p {
+    font-size: 2rem;
+    line-height: 3rem;
 }
 
 .three-steps .step-one {
@@ -350,4 +353,150 @@ h4 {
     text-align: center;
     line-height: 8rem;
     font-size: 3rem;
+}
+
+/*------MEDIA QUERIES------*/
+
+
+@media only screen and (min-width: 1025px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* GLOBAL */
+    html {
+        font-size: 8px;
+    }
+
+    /* DEFINITION */
+    .definition li {
+        font-size: 2.3rem;
+        line-height: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    /* THREE-STEPS */
+
+.three-steps {
+    display: grid;
+    grid-template: 1fr 2fr 2fr 2fr 2fr 1fr / 1fr 1fr 1fr;
+    align-items: start;
+    justify-items: end;
+    column-gap: 3rem;
+    row-gap: 1rem;
+}
+
+.three-steps p {
+    font-size: 2.4rem;
+    line-height: 3.5rem;
+}
+}
+
+@media only screen and (max-width: 768px) {
+    /* GLOBAL */
+    html {
+        font-size: 8px;
+    }
+
+    section {
+    height: 100vh;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    scroll-snap-align: start;
+    }
+
+    p {
+    margin-bottom: 2rem;
+    line-height: 3rem;
+    letter-spacing: .1rem;
+    text-align: justify;
+    }
+
+    .down-button {
+        align-self: start;
+    }
+
+    /* HEADINGS */
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 3rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+        margin-bottom: .5rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+        margin-bottom: .1rem;
+    }
+
+    /* DEFINITION */
+    .definition li {
+        font-size: 2.3rem;
+        line-height: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    /* THREE STEPS */
+    .three-steps {
+    display: grid;
+    grid-template: 1fr 2fr 2fr 2fr 1fr / 100%;
+    align-items: center;
+    justify-items: center;
+    row-gap: 0;
+    }
+
+    .three-steps h2 {
+        grid-area: 1 / 1;
+        align-self: end;
+    }
+
+    .three-steps .main-title {
+        font-size: 4rem;
+        letter-spacing: .5rem;
+    }
+
+    .three-steps .subtitle {
+        font-size: 3rem;
+        letter-spacing: .1rem;
+        font-weight: lighter;
+    }
+
+    .three-steps div {
+        line-height: 3rem;
+        width: 90%;
+        margin: 0 5rem;
+    }
+
+    .three-steps p {
+        text-align: left;
+        font-size: 2.5rem;
+    }
+
+
+    .three-steps .step-one {
+        grid-area: 2 / 1;
+    }
+
+    .three-steps .step-two {
+        grid-area: 3 / 1;
+    }  
+
+    .three-steps .step-three {
+        grid-area: 4 / 1;
+    }
+
+    .three-steps .down-button {
+        grid-area: 5 / 1;
+        text-align: center;
+        align-self: center;
+    }
+
 }
