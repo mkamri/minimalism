@@ -221,7 +221,7 @@ h4 {
     flex-direction: column;
 }
 .step .sidebar .main-title {
-    line-height: 3rem;
+    line-height: 5rem;
 }
 .step .sidebar .subtitle {
     font-size: 3rem;
