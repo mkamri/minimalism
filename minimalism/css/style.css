@@ -28,6 +28,17 @@ p {
     letter-spacing: .1rem;
 }
 
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #a59191;
+}
+
+a:hover,
+a:active {
+    color: #746565;
+}
+
 .down-button {
    font-size: 2.8rem; 
 }
