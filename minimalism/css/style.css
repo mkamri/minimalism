@@ -73,6 +73,27 @@ img {
     margin-bottom: 1rem;
 }
 
+/*-----------DEFINITION-----------*/
+
+.definition {
+    height: 20rem;
+    background: var(--dark-grey);
+    color: var(--light-grey);
+}
+
+.definition h2 {
+    margin-bottom: .8rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.definition ol {
+    line-height: 1.5;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    padding-left: 1rem;
+}
+
 
 
 
@@ -103,5 +124,11 @@ img {
     .site-description p {
         font-size: 1.2rem;
         text-align: justify;
+    }
+
+    /*------DEFINITION------*/
+    .definition {
+    height: auto;
+    padding: 5rem 0;
     }
 }
