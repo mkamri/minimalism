@@ -14,4 +14,59 @@ img {
     margin: 0 auto;
     padding: 0 3rem;
     max-width: 1180px;
+    overflow: hidden;
+}
+
+.center-text {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.main-title,
+.sub-title {
+    display: block;
+}
+
+/*------HERO------*/
+
+.hero {
+    height: 100vh;
+    text-align: center;
+}
+
+.hero h1 .main-title {
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: .5rem;
+}
+
+.hero h1 .subtitle {
+    font-weight: 300;
+    letter-spacing: .15rem;
+}
+
+
+
+
+
+/*------MOBILE------*/
+
+@media screen and (max-width: 580px) {
+
+    /*------DOCUMENT------*/
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    /*------HERO------*/
+    .hero {
+        height: 15rem;
+    }
+
+    .hero h1 .main-title {
+        font-size: 3rem;
+    }
+
 }
