@@ -29,6 +29,14 @@ img {
     display: block;
 }
 
+/*------CSS VARIABLES------*/
+:root {
+    --light-grey: #D3D3D3;
+    --dark-grey: #4b4a4a;
+    --link-color: #948080;
+    --link-color-hover: #534747;
+}
+
 /*------HERO------*/
 
 .hero {
@@ -47,11 +55,28 @@ img {
     letter-spacing: .15rem;
 }
 
+/*------DESCRIPTION------*/
+
+.site-description {
+    height: 30rem;
+    text-align: center;
+    border-top: var(--light-grey) 1px solid;
+}
+
+.site-description h2 {
+    margin-bottom: 2rem;
+}
+
+.site-description p {
+    line-height: 1.5;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
 
 
 
 
-/*------MOBILE------*/
+/*-----------MOBILE-----------*/
 
 @media screen and (max-width: 580px) {
 
@@ -69,4 +94,14 @@ img {
         font-size: 3rem;
     }
 
+    /*------DESCRIPTION------*/
+    .site-description {
+    height: auto;
+    padding: 3rem 1.5rem;
+    }
+
+    .site-description p {
+        font-size: 1.2rem;
+        text-align: justify;
+    }
 }
