@@ -94,6 +94,33 @@ img {
     padding-left: 1rem;
 }
 
+/*-----------THREE STEPS-----------*/
+.three-steps {
+    height: 30rem;
+    display: grid;
+    grid-template: 35% 1fr / repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.three-steps-heading {
+    grid-area: 1 / 1 / 2 / 4;
+    justify-self: center;
+    align-self: end;
+    font-size: 2.6rem;
+    font-weight: 300;
+}
+
+.three-steps-column h3 {
+    font-size: 1.3rem;
+    margin-bottom: .3rem;
+}
+
+.three-steps-column {
+    justify-self: center;
+    font-size: 1.2rem;
+    line-height: 1.3
+}
+
 
 
 
@@ -117,8 +144,8 @@ img {
 
     /*------DESCRIPTION------*/
     .site-description {
-    height: auto;
-    padding: 3rem 1.5rem;
+        height: auto;
+        padding: 3rem 1.5rem;
     }
 
     .site-description p {
@@ -128,7 +155,40 @@ img {
 
     /*------DEFINITION------*/
     .definition {
-    height: auto;
-    padding: 5rem 0;
+        height: auto;
+        padding: 5rem 0;
     }
+
+    .definition li {
+        margin-bottom: 1rem
+    }
+
+    /*-----------THREE STEPS-----------*/
+.three-steps {
+    height: 50rem;
+    display: grid;
+    grid-template: 1fr 2fr 2fr 2fr 1fr / 100%;
+    grid-gap: 1rem;
+}
+
+.three-steps-heading {
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: center;
+    align-self: end;
+    font-size: 2.2rem;
+    font-weight: 300;
+    margin: 2.5rem 0;
+}
+
+.three-steps-column h3 {
+    font-size: 1.3rem;
+    margin-bottom: .3rem;
+}
+
+.three-steps-column {
+    justify-self: center;
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+
 }
