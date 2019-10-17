@@ -254,22 +254,59 @@ img {
 /*------STEP SETUP------*/
 
 .step {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 3rem 1fr;
+    padding-top: 0;
 }
 
-.step-content {
-    grid-column: 1;
-}
-
-.sticky-header h2 {
-    position: relative;
+.sticky-header {
+    position: sticky;
+    top: 0;
+    padding: 5px 0 10px 10px;
+    margin-bottom: 5rem;
+    font-size: 2rem;
     text-align: center;
+    font-weight: 300;
+    background: #fff;
+    border-bottom: var(--light-grey) 2px solid;
 }
-.sticky-header .main-title,
-.sticky-header .subtitle {
-    display: inline;
+
+/*------STEP ONE------*/
+.step-one p {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.step-one-1 {
+    height: auto;
+    padding: 2rem;
+    text-align: center;
+    background: var(--light-grey);
+    margin-bottom: 3rem;
+}
+
+.step-one-2 {
+    grid-template: 2rem repeat(3, 4fr 3fr) / 100%;
+    grid-gap: 0;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.step-one-2 h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    grid-column: 1 / 2;
+}
+
+.step-one-2 h4 {
+    font-size: 1.3rem;
+}
+
+.step-one-3 {
+    height: auto;
+    padding: 2rem;
+    text-align: left;
+    background: var(--dark-grey);
+    color: var(--light-grey);
+    margin-bottom: 5rem;
 }
 
 }
