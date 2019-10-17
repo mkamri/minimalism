@@ -231,6 +231,31 @@ a:active {
     grid-column-gap: 3rem;
 }
 
+/*-------STEP THREE------*/
+.step-three p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.step-three-1 {
+    height: auto;
+    padding: 2rem;
+    background: var(--light-grey);
+    margin-bottom: 3rem;
+}
+
+.step-three-2 {
+    height: auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.step-three-2 h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
 /*-----------MOBILE-----------*/
 
 @media screen and (max-width: 580px) {
@@ -373,6 +398,30 @@ a:active {
 
 .step-two-2 ul:first-child {
     margin-bottom: 2rem;
+}
+
+/*-------STEP THREE------*/
+
+.step-three-1 {
+    margin-bottom: 1rem;
+}
+
+.step-three-2 {
+    height: auto;
+    padding: 2rem 0;
+}
+
+.step-three-2 h3 {
+    text-align: left;
+}
+
+.step-three-2 p {
+    text-align: justify;
+}
+
+.step-three-2 h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 }
