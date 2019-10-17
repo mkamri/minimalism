@@ -247,13 +247,32 @@ a:active {
 
 .step-three-2 {
     height: auto;
-    padding: 2rem;
+    padding: 2rem 0 3rem 0;
     text-align: center;
+    border-bottom: 1px solid var(--light-grey);
 }
 
 .step-three-2 h3 {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
+}
+
+/*------FINAL WORDS------*/
+
+.final-words {
+    margin-top: 25rem;
+    height: 100vh;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/*------FOOTER------*/
+
+footer {
+    padding: 5px 0;
+    background: var(--dark-grey);
+    color: var(--light-grey);
+    text-align: center;
 }
 
 /*-----------MOBILE-----------*/
