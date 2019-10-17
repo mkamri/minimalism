@@ -106,7 +106,10 @@ a:active {
 
 /*-----------THREE STEPS-----------*/
 .three-steps {
-    height: 30rem;
+    height: auto;
+    margin: 5rem;
+    padding: 5rem;
+    border: var(--light-grey) 1px solid;
     display: grid;
     grid-template: 35% 1fr / repeat(3, 1fr);
     grid-gap: 2rem;
@@ -316,9 +319,15 @@ footer {
 
     /*-----------THREE STEPS-----------*/
 .three-steps {
-    height: 50rem;
+    height: 40rem;
+    margin: 1rem;
+    padding: 0 1rem;
+    border: var(--light-grey) 1px solid;
     display: grid;
-    grid-template: 1fr 2fr 2fr 2fr 1fr / 100%;
+    grid-template: 35% 1fr / repeat(3, 1fr);
+    grid-gap: 0;
+    display: grid;
+    grid-template: 1fr 2fr 2fr 2fr / 100%;
     grid-gap: 1rem;
 }
 
