@@ -314,21 +314,17 @@ footer {
     }
 
     .definition li {
-        margin-bottom: 1rem
+        margin-bottom: 1rem;
     }
 
     /*-----------THREE STEPS-----------*/
 .three-steps {
-    height: 40rem;
-    margin: 1rem;
-    padding: 0 1rem;
+    height: auto;
+    margin: 3rem 1rem;
+    padding: 2rem;
     border: var(--light-grey) 1px solid;
-    display: grid;
-    grid-template: 35% 1fr / repeat(3, 1fr);
+    grid-template: 3rem 1fr 1fr 1fr / 100%;
     grid-gap: 0;
-    display: grid;
-    grid-template: 1fr 2fr 2fr 2fr / 100%;
-    grid-gap: 1rem;
 }
 
 .three-steps-heading {
@@ -338,6 +334,11 @@ footer {
     font-size: 2.2rem;
     font-weight: 300;
     margin: 2.5rem 0;
+}
+
+.three-steps h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .three-steps-column h3 {
